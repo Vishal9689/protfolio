@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Vishal Bonde</title>
+  <style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    /* Hide Scrollbar Completely */
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+      scrollbar-width: none;       /* Firefox */
+    }
+    body::-webkit-scrollbar {
+      display: none;               /* Chrome, Safari */
+    }
+
+    /* Body */
+    body {
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: #f1f5f9;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 50px 15px;
+    }
+
+    /* Container */
+    .container {
+      width: 100%;
+      max-width: 1000px;
+      background: rgba(15, 23, 42, 0.85);
+      border-radius: 15px;
+      padding: 40px 25px;
+      box-shadow: 0 0 20px rgba(56, 189, 248, 0.2);
+      backdrop-filter: blur(10px);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Headings */
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+      font-size: 2.2rem;
+      margin-bottom: 8px;
+      word-wrap: break-word;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #94a3b8;
+      margin-bottom: 35px;
+    }
+
+    /* Skills Section */
+    .skills-section {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 35px;
+    }
+
+    .skills-section h3 {
+      text-align: center;
+      color: #ffd700;
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+    }
+
+    .skills-section p {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: #cbd5e1;
+      margin-bottom: 15px;
+      text-align: justify;
+    }
+
+    .skills-section strong {
+      color: #00ffff;
+    }
+
+    /* Skill Tags */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 35px;
+    }
+
+    .skill {
+      background: #1e293b;
+      border: 2px solid #38bdf8;
+      border-radius: 30px;
+      padding: 8px 18px;
+      font-weight: 600;
+      color: #38bdf8;
+      transition: 0.3s;
+      font-size: 0.9rem;
+    }
+
+    .skill:hover {
+      background: #38bdf8;
+      color: #0f172a;
+      transform: scale(1.08);
+      box-shadow: 0 0 15px #38bdf8;
+    }
+
+    /* Buttons */
+    .btn-group {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .btn {
+      background: #38bdf8;
+      color: #0f172a;
+      padding: 10px 25px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s;
+      border: 2px solid transparent;
+      font-size: 0.95rem;
+    }
+
+    .btn:hover {
+      background: transparent;
+      border: 2px solid #38bdf8;
+      color: #38bdf8;
+      box-shadow: 0 0 20px #38bdf8;
+      transform: scale(1.05);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      color: #94a3b8;
+      margin-top: 40px;
+      font-size: 0.85rem;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 1024px) {
+      .container { padding: 30px 20px; }
+      h1 { font-size: 1.9rem; }
+      h2 { font-size: 0.95rem; }
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 30px 10px; }
+      .container { padding: 25px 15px; }
+      h1 { font-size: 1.7rem; }
+      h2 { font-size: 0.9rem; }
+      .skills-section h3 { font-size: 1.3rem; }
+      .skills-section p { font-size: 0.9rem; }
+      .skill { padding: 7px 14px; font-size: 0.85rem; }
+      .btn { padding: 8px 20px; font-size: 0.85rem; }
+    }
+
+    @media (max-width: 480px) {
+      h1 { font-size: 1.5rem; }
+      h2 { font-size: 0.8rem; }
+      .skills-section h3 { font-size: 1.1rem; }
+      .skills-section p { font-size: 0.85rem; }
+      .skill { padding: 6px 12px; font-size: 0.8rem; }
+      .btn { padding: 7px 18px; font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Hire Vishal Bonde</h1>
+    <h2>Completing B.tech In Computer Engineering | Java & SQL Developer</h2>
+
+    <!-- Technical Skills Section -->
+    <div class="skills-section">
+      <h3>💼 Technical Skills</h3>
+
+      <p><strong>Programming Language:</strong><br>
+      Java (Core + OOPs Concepts, Arrays, Loops, Exception Handling)</p>
+
+      <p><strong>Database Management:</strong><br>
+      SQL (DDL, DML, Joins, Subqueries, Constraints, Normalization, Aggregate Functions)</p>
+
+      <p><strong>Manual Testing:</strong><br>
+      Test Case Design, Bug/Defect Life Cycle, Test Plan, SDLC & STLC Knowledge,<br>
+      Defect Reporting using <strong>Jira</strong>, API Testing using <strong>Postman</strong></p>
+
+      <p><strong>Web Technologies:</strong><br>
+      HTML5, CSS3 (Responsive Design, Flexbox, Grid, Animations, Pseudo-selectors)</p>
+
+      <p><strong>Version Control:</strong><br>
+      Git & GitHub (Basic Repository Hosting and Commit Workflow)</p>
+    </div>
+
+    <!-- Skill Tags -->
+    <div class="skills">
+      <div class="skill">Java</div>
+      <div class="skill">SQL</div>
+      <div class="skill">Manual Testing</div>
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Postman</div>
+      <div class="skill">Jira</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="btn-group">
+      <a href="contact.html" class="btn">Contact Me</a>
+      <a href="home.html" class="btn">← Back to Home</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      © 2025 Vishal Bonde • Computer Engineering | Java & SQL Developer
+    </footer>
+  </div>
+</body>
+</html>
